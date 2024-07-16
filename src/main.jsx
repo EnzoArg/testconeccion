@@ -18,9 +18,9 @@ const projectId = 'ecdd81a82c458b86628c0d3e48e6171c'
 
 // 2. Create wagmiConfig
 const metadata = {
-  name: 'Web3Modal',
-  description: 'Web3Modal Example',
-  url: 'https://web3modal.com', // origin must match your domain & subdomain
+  name: 'QuiniBlock',
+  description: 'QuiniBlock de The FiveBlocks!',
+  url: 'https://QuiniBlock.com', // origin must match your domain & subdomain
   icons: ['https://avatars.githubusercontent.com/u/37784886']
 }
 
@@ -37,7 +37,10 @@ createWeb3Modal({
   wagmiConfig: config,
   projectId,
   enableAnalytics: true, // Optional - defaults to your Cloud configuration
-  enableOnramp: true // Optional - false as default
+  enableOnramp: true, // Optional - false as default
+  themeVariables: {
+    '--w3m-accent': '#c770f0', //Color usado en el boton de conectar
+  }
 })
 
 ReactDOM.createRoot(document.getElementById('root')).render(
