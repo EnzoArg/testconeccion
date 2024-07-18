@@ -12,8 +12,8 @@ Currently, two official plugins are available:
 My personal portfolio <a href="https://soumyajit.vercel.app/" target="_blank">soumyajit.tech</a> 
 
 # Como ejecutar el codigo? 
-
-npm install
+# hay alguna libreria typescript que esta discontinuada por eso uso el force
+npm install --force
 
 y
 
